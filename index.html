@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="assets/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Raleway:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="./assets/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Animedoro</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="load fade-in">
+        <img
+          src="./assets/img/akatsuki-nube-logo-51123688B2-seeklogo.com.png"
+          alt="Animedoro Minimal"
+          id="logo"
+        />
+        <h1>アニメドーロ</h1>
+        <p class="subtitle">ANIMEDORO</p>
+      </div>
+      <div class="about">
+        <div class="back_box">
+          <span class="back fas fa-long-arrow-alt-right"></span>
+        </div>
+        <img
+          src="./assets/img/akatsuki-nube-logo-51123688B2-seeklogo.com.png"
+          alt="Animedoro Minimal"
+          id="logo"
+        />
+        <h1>アニメドーロ</h1>
+        <p class="subtitle">ANIMEDORO</p>
+        <p class="about__text">
+          Hey there! I am Piyush Upadhyay, a CS Hons. student at the University
+          of Waterloo. The original idea was proposed by Josh Chen, a fellow
+          youtuber whose video inspired me to build this minimalistic app for
+          you. If you want to know why I did it, read below! <br /><br />Naruto
+          has been my ultimate craze for the past few months. The problem is
+          that it’s sometimes hard to give it up before atleast 4-5 episodes
+          (close to 2 hrs). Being in University right now, I can’t afford to be
+          so lenient with my time. Therefore, using my programming skills, I
+          built this app for all Manga/Anime fans out there. I hope this helps
+          you focus better and finish those thrilling mangas/anime asap.
+        </p>
+      </div>
+      <div class="main">
+        <div class="nav">
+          <h1>アニメドーロ</h1>
+          <p class="about-link">About me</p>
+          <p class="subtitle">ANIMEDORO</p>
+        </div>
+        <div class="timer">
+          <svg viewBox="0 0 320 228">
+            <circle cx="50%" cy="50%" r="90"></circle>
+            <circle cx="50%" cy="50%" r="90" id="val"></circle>
+          </svg>
+          <div class="time_left">
+            <h2 id="time"></h2>
+          </div>
+        </div>
+        <div class="add_time">
+          <p id="extra_time">
+            <i class="fas fa-hourglass-start"></i> + 5 minutes
+          </p>
+          <p class="next_episode">
+            Next 25 minute episode at <br /><span id="nxt_time">16:45</span>
+          </p>
+        </div>
+        <div class="icons">
+          <img
+            src="./assets/img/int_icon/Playlist.png"
+            id="playlist"
+            alt="Playlist"
+          />
+          <img
+            src="./assets/img/int_icon/Play.png"
+            id="play"
+            alt=""
+            data-playing="0"
+          />
+          <img src="./assets/img/int_icon/Stop.png" id="stop" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
