@@ -104,6 +104,7 @@ function UI() {
       loading_page.classList.add("fade-out");
       main.classList.add("fade-in");
       main.style.visibility = "unset";
+      document.location.href = "#";
       window.setTimeout(() => {
         loading_page.style.display = "none";
       }, 500);
@@ -115,14 +116,20 @@ function UI() {
       about.classList.toggle("slide-out");
     }
     about.style.visibility = "unset";
+    about.style.display = "flex";
     about.classList.toggle("slide-in");
+    window.setTimeout(() => {
+      main.style.display = "none";
+    }, 500);
   });
 
   back_button.addEventListener("click", () => {
-    main.style.visibility = "unset";
+    main.style.display = "unset";
     about.classList.toggle("slide-in");
     about.classList.toggle("slide-out");
-    //   about.style.visibility = "hidden";
+    window.setTimeout(() => {
+      about.style.display = "none";
+    }, 400);
   });
 }
 
