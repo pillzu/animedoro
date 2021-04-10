@@ -99,6 +99,18 @@ function UX() {
 }
 
 function UI() {
+  if (window.innerWidth > 425) {
+    document.querySelector(".mob_only").style.display = "flex";
+  }
+  window.addEventListener("resize", () => {
+    let el = document.querySelector(".mob_only");
+    console.log("Yo");
+    if (window.innerWidth > 425) {
+      el.style.display = "flex";
+    } else {
+      el.style.display = "none";
+    }
+  });
   window.onload = () => {
     window.setTimeout(() => {
       loading_page.classList.add("fade-out");

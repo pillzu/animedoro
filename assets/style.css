@@ -223,6 +223,40 @@ Icons Start
 Icons End
 *********************************************************
 **/
+/**
+*********************************************************
+Mobile Only Alert Start
+*********************************************************
+**/
+
+.mob_only {
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  display: none;
+}
+.mob_text {
+  text-align: center;
+  max-width: 50%;
+}
+.mob_text h2 {
+  font-size: 3em;
+}
+.mob_text p {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+/**
+*********************************************************
+Mobile Only Alert End
+*********************************************************
+**/
 
 /**
 *********************************************************
